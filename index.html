@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F9CB4E">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Project Budget Tracker · The Holler</title>
+<style>
+/* ============================================================
+   BRAND TOKENS — The Holler palette, sampled from the official
+   logo (Holler yellow #F9CB4E, amber edge #CB952A).
+   ============================================================ */
+:root{
+  --brand:#F9CB4E;        /* Holler yellow: buttons, active tabs, highlights */
+  --brand-deep:#E6B63A;   /* pressed / hover */
+  --brand-ink:#1F2A36;    /* text on top of Holler yellow */
+  --brand-soft:#FFF6D6;   /* pale tint for selected cards */
+  --gold:#9C6D14;         /* deep Holler amber for prices & links (readable on white) */
+  --gold-soft:#FFF6D6;
+
+  /* semantic (leave these) */
+  --ok:#1E9E62; --warn:#D98E04; --bad:#D6453D;
+
+  /* light theme */
+  --paper:#F1F3F2; --card:#FFFFFF; --card-2:#F7F8F7;
+  --ink:#1F2A36; --ink-2:#4B5B6B; --ink-3:#7F8E9C;
+  --rule:#D9DFE4; --rule-2:#E9EDF0;
+  --shadow:0 1px 2px rgba(20,30,40,.06),0 8px 24px rgba(20,30,40,.06);
+  --r:14px; --r-sm:10px;
+}
+html[data-theme="dark"]{
+  --brand:#F9CB4E; --brand-deep:#FFD866; --brand-ink:#1F2A36; --brand-soft:#3A3012;
+  --gold:#F9CB4E; --gold-soft:#3A3012;
+  --paper:#101519; --card:#182028; --card-2:#1E2831;
+  --ink:#ECF1F5; --ink-2:#B4C0CC; --ink-3:#7C8B99;
+  --rule:#2B3640; --rule-2:#222C35;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%}
+body{
+  font-family:"Avenir Next","Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- top bar ---------- */
+.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--rule);border-top:5px solid var(--brand)}
+.topbar img{height:26px;width:auto;display:block}
+.topbar .divider{width:1px;height:30px;background:var(--rule)}
+.topbar .wordmark{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.topbar .wordmark small{display:block;font-weight:500;font-size:12px;color:var(--ink-3);margin-top:-2px}
+.topbar .spacer{flex:1}
+.saved{font-size:12px;color:var(--ink-3);white-space:nowrap}
+.saved.on{color:var(--ok)}
+
+.wrap{max-width:1400px;margin:0 auto;padding:20px 20px 80px}
+.view{display:none}.view.active{display:block}
+
+/* ---------- buttons ---------- */
+.btn{border:1px solid var(--rule);background:var(--card);color:var(--ink);border-radius:var(--r-sm);padding:11px 16px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;transition:transform .08s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.btn.primary:hover{background:var(--brand-deep)}
+.btn.quiet{background:transparent}
+.btn.danger{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 35%,var(--rule))}
+.btn.sm{padding:8px 12px;font-size:13px}
+.btn.icon{width:38px;height:38px;padding:0;justify-content:center;border-radius:50%}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* ---------- page header rows ---------- */
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.row.between{justify-content:space-between}
+.title-h1{font-size:28px;font-weight:800;letter-spacing:-.02em;margin:0}
+.lede{color:var(--ink-2);margin:6px 0 0;max-width:62ch}
+.name-input{font-size:26px;font-weight:800;letter-spacing:-.02em;border:none;background:transparent;border-bottom:2px solid transparent;padding:2px 0;min-width:200px;width:min(100%,560px)}
+.name-input:hover{border-bottom-color:var(--rule)}
+.name-input:focus{outline:none;border-bottom-color:var(--gold)}
+
+/* ---------- segmented phase tabs ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;background:var(--card);border:1px solid var(--rule);border-radius:var(--r-sm);padding:4px}
+.tabs button{border:none;background:transparent;color:var(--ink-2);font-weight:700;font-size:14px;padding:9px 14px;border-radius:8px}
+.tabs button.active{background:var(--brand);color:var(--brand-ink)}
+.funding-line{color:var(--ink-2);font-size:14px}
+
+/* ---------- cards / grids ---------- */
+.grid{display:grid;gap:14px}
+.grid.teams{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.grid.items{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:11px}
+.grid.projects{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:16px;box-shadow:var(--shadow)}
+
+/* team card */
+.team{display:flex;flex-direction:column;gap:10px;position:relative}
+.team.over{border-color:var(--bad)}
+.team .head{display:flex;align-items:center;gap:9px}
+.swatch{width:12px;height:12px;border-radius:50%;flex:none;display:inline-block}
+.team .name{flex:1;border:none;background:transparent;font-size:19px;font-weight:800;border-bottom:2px solid transparent;padding:2px 0;min-width:0}
+.team .name:focus{outline:none;border-bottom-color:var(--gold)}
+.x{border:none;background:transparent;color:var(--ink-3);width:32px;height:32px;border-radius:50%;font-size:16px}
+.x:hover{background:var(--rule-2);color:var(--bad)}
+
+/* the funds gauge — the one bold element */
+.gauge{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.gauge .k{font-size:12px;color:var(--ink-3)}
+.gauge .v{font-variant-numeric:tabular-nums;font-weight:800;line-height:1;letter-spacing:-.02em}
+.gauge .v.big{font-size:38px}
+.gauge .v.mid{font-size:22px;color:var(--ink-2)}
+.gauge .v.left{color:var(--ok)}
+.gauge .v.left.low{color:var(--warn)}
+.gauge .v.left.over{color:var(--bad)}
+.gauge .v.bonus{color:var(--gold)}
+.cur{font-size:.6em;opacity:.7;margin-right:1px;font-weight:700}
+.bar{height:16px;background:var(--rule-2);border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
+.fill{height:100%;width:0;border-radius:10px;background:var(--ok);transition:width .3s,background .3s}
+.fill.low{background:var(--warn)}.fill.over{background:var(--bad)}
+.sub{font-size:12px;color:var(--ink-3);text-align:center}
+.sub.gold{color:var(--gold);font-weight:700}
+.shop{width:100%;border:none;background:var(--brand);color:var(--brand-ink);border-radius:var(--r-sm);padding:12px;font-weight:800;font-size:15px}
+.shop:hover{background:var(--brand-deep)}
+
+/* ---------- shop dashboard ---------- */
+.dash{position:sticky;top:0;z-index:5;margin-bottom:16px}
+.dash .who{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;margin-bottom:10px}
+.dash .who span.ph{color:var(--ink-3);font-weight:600;font-size:14px}
+.dash .gauge .v.big{font-size:40px}
+.alert{margin-top:10px;font-weight:700;font-size:14px;display:none}
+.alert.show{display:block}
+.alert.over{color:var(--bad)}.alert.low{color:var(--warn)}
+
+/* item card */
+.item{display:flex;flex-direction:column;gap:9px;padding:12px}
+.item.has{border-color:var(--brand);background:var(--brand-soft)}
+.item .top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px}
+.item .nm{font-size:16px;font-weight:700;line-height:1.15}
+.item .un{font-size:11px;color:var(--ink-3);margin-top:2px}
+.item .pr{font-size:17px;font-weight:800;color:var(--gold);white-space:nowrap}
+.item .note{font-size:11px;color:var(--warn);text-align:center;height:13px}
+.stepper{display:flex;align-items:center;gap:8px;margin-top:auto}
+.step{width:42px;height:42px;border-radius:11px;border:1px solid var(--rule);background:var(--card);font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;line-height:1;user-select:none}
+.step.plus{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.step:active{transform:scale(.9)}
+.step:disabled{opacity:.35;cursor:not-allowed}
+.qty{flex:1;text-align:center;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.line{font-size:12px;color:var(--ink-3);text-align:center;height:15px}
+.line b{color:var(--gold)}
+.once{flex:1;height:42px;border-radius:11px;border:1px solid var(--rule);background:var(--card);font-weight:800;font-size:15px}
+.once.on{background:var(--ok);border-color:var(--ok);color:#fff}
+
+footer.actions{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+
+/* ---------- library ---------- */
+.proj{display:flex;flex-direction:column;gap:10px}
+.proj h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.proj .meta{color:var(--ink-3);font-size:13px}
+.proj .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.empty{color:var(--ink-3);text-align:center;padding:48px 20px;font-size:16px;border:2px dashed var(--rule);border-radius:var(--r)}
+.brandbar{margin-top:36px;padding-top:22px;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.brandbar b{font-size:15px}
+.brandbar p{color:var(--ink-2);font-size:14px;margin:6px 0 12px;max-width:52ch}
+.brandbar .credit img{height:22px;width:auto;display:block;margin-bottom:8px}
+.brandbar .credit a{color:var(--gold);font-weight:700;text-decoration:none}
+.brandbar .credit a:hover{text-decoration:underline}
+@media(max-width:700px){.brandbar{grid-template-columns:1fr}}
+.banner{background:var(--gold-soft);border:1px solid var(--gold);color:var(--ink);padding:12px 14px;border-radius:var(--r-sm);font-size:14px;margin-bottom:16px}
+
+/* ---------- timeline ---------- */
+.chart-box svg{width:100%;height:auto;display:block}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px}
+.legend .it{display:flex;align-items:center;gap:7px;font-size:13px}
+.legend .it .m{color:var(--ink-3)}
+.log{margin-top:14px;padding:0;overflow:hidden}
+.log h3{margin:0;padding:12px 16px;font-size:14px;color:var(--ink-2);border-bottom:1px solid var(--rule)}
+.log .scroll{max-height:340px;overflow:auto}
+table.t{width:100%;border-collapse:collapse;font-size:14px}
+table.t th,table.t td{text-align:left;padding:8px 16px;border-bottom:1px solid var(--rule-2);white-space:nowrap}
+table.t th{position:sticky;top:0;background:var(--card);color:var(--ink-3);font-size:12px;font-weight:600}
+td.dim{color:var(--ink-3);font-variant-numeric:tabular-nums}
+td.amt{font-variant-numeric:tabular-nums;font-weight:700}
+td.amt.neg{color:var(--bad)}
+td.run{font-variant-numeric:tabular-nums;color:var(--gold);text-align:right}
+
+/* ---------- modals ---------- */
+.modal{display:none;position:fixed;inset:0;z-index:60;background:rgba(10,16,20,.55);align-items:flex-start;justify-content:center;padding:24px 16px;overflow:auto}
+.modal.show{display:flex}
+.sheet{background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:22px;width:100%;max-width:560px;box-shadow:var(--shadow);margin:auto}
+.sheet h2{margin:0 0 4px;font-size:21px;letter-spacing:-.01em}
+.sheet p.hint{margin:0 0 16px;color:var(--ink-2);font-size:14px}
+.field{margin-bottom:13px}
+.field label{display:block;font-size:13px;color:var(--ink-2);margin-bottom:5px;font-weight:600}
+.field input[type=text],.field input[type=number],.field select{width:100%;background:var(--card-2);border:1px solid var(--rule);border-radius:var(--r-sm);padding:11px 13px;font-size:16px}
+.field input:focus{border-color:var(--gold)}
+.two{display:flex;gap:10px}.two .field{flex:1}
+.check{display:flex;align-items:center;gap:9px;font-size:14px;cursor:pointer;margin:8px 0}
+.check input{width:20px;height:20px}
+.choice{border:1px solid var(--rule);border-radius:var(--r-sm);padding:12px 14px;margin-bottom:10px}
+.choice.on{border-color:var(--brand);background:var(--brand-soft)}
+.choice label.head{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.choice label.head input{width:20px;height:20px;margin-top:2px;flex:none}
+.choice .body{margin:10px 0 0 30px}
+.choice small{display:block;color:var(--ink-2);font-size:13px;margin-top:2px}
+.err{color:var(--bad);font-size:13px;min-height:16px;margin-top:4px}
+.sheet .acts{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+.list{border:1px solid var(--rule);border-radius:var(--r-sm);overflow:hidden;margin-top:8px}
+.list .rowi{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid var(--rule-2);font-size:14px}
+.list .rowi:last-child{border-bottom:none}
+.list .rowi .grow{flex:1;min-width:0}
+.list .rowi .grow b{display:block}
+.list .rowi .grow span{color:var(--ink-3);font-size:12px}
+.list .rowi input.inl{flex:1;background:var(--card-2);border:1px solid var(--rule);border-radius:8px;padding:7px 10px;font-size:14px}
+h4.sec{margin:18px 0 6px;font-size:14px;color:var(--ink-2)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:90;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.now{font-size:13px;color:var(--ink-3);margin-bottom:6px;font-weight:600}
+.tabs button .n{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--rule-2);color:var(--ink-2);font-size:12px;margin-right:7px}
+.tabs button.active .n{background:rgba(0,0,0,.14);color:var(--brand-ink)}
+.tabs button.done .n{background:var(--brand-soft);color:var(--brand)}
+.challenges{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.challenges{align-items:start}
+.chk{border:1px solid var(--rule);border-radius:var(--r-sm);padding:10px 12px;margin:0}
+.chk.on{border-color:var(--brand);background:var(--brand-soft)}
+.chk-head{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.chk-head input{width:20px;height:20px;margin-top:3px;flex:none}
+.chk .ic{font-size:22px;line-height:1.1}
+.chk b{display:block;font-size:15px}
+.chk small{color:var(--ink-2);font-size:12px;display:block;line-height:1.3}
+.lesson{font-size:12px;color:var(--gold);font-weight:700;text-decoration:none;display:inline-block}
+.lesson:hover{text-decoration:underline}
+.chk .lesson{margin:6px 0 0 30px}
+.chk-mats{margin:8px 0 0 30px}
+.chk:not(.on) .chk-mats{display:none}
+.chk-mats summary{font-size:13px;font-weight:700;color:var(--ink-2);cursor:pointer;padding:2px 0}
+.chk-mats summary span{color:var(--ink-3);font-weight:600}
+.mat-opts{display:flex;flex-direction:column;gap:3px;margin-top:6px}
+.mat-opts label{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;padding:3px 0}
+.mat-opts label input{width:17px;height:17px;flex:none}
+.mat-opts label em{margin-left:auto;font-style:normal;color:var(--ink-3);white-space:nowrap}
+details summary{cursor:pointer;font-weight:700;color:var(--ink-2);padding:6px 0}
+select.sel{background:var(--card-2);border:1px solid var(--rule);border-radius:var(--r-sm);padding:9px 12px;font-size:14px;font-weight:600}
+
+@media(max-width:560px){
+  .title-h1{font-size:23px}.name-input{font-size:21px}
+  .gauge .v.big{font-size:32px}
+  .topbar{padding:10px 14px}.wrap{padding:14px 14px 70px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="https://www.theholler.org" target="_blank" rel="noopener" title="The Holler"><img src="data:image/png;base64,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" alt="The Holler"></a>
+  <div class="divider"></div>
+  <div class="wordmark">Project Budget Tracker<small>a free classroom tool from The Holler</small></div>
+  <div class="spacer"></div>
+  <span class="saved" id="savedNote"></span>
+  <button class="btn icon quiet" id="themeBtn" title="Switch light / dark" aria-label="Switch theme">◐</button>
+</header>
+
+<div class="wrap">
+
+  <!-- ================= LIBRARY ================= -->
+  <section class="view active" id="v-library">
+    <div class="row between">
+      <div>
+        <h1 class="title-h1">Your projects</h1>
+        <p class="lede">Set a budget, stock a supply depot, and watch every team's spending live. Projects save on this device and can be exported to move or back up.</p>
+      </div>
+      <div class="row">
+        <button class="btn" id="importBtn">Import project file</button>
+        <button class="btn primary" id="newBtn">New project</button>
+      </div>
+    </div>
+    <div id="storageBanner" class="banner" style="display:none;margin-top:16px">Saving is turned off in this browser (private window or storage blocked). Your work will be lost when the tab closes unless you export the project.</div>
+    <div class="grid projects" id="projGrid" style="margin-top:18px"></div>
+    <div class="empty" id="projEmpty" style="display:none;margin-top:18px">No projects yet. Pick a challenge to get started.</div>
+    <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+    <div class="brandbar">
+      <div class="get">
+        <b>Take it with you</b>
+        <p>Download the whole tool as one file to keep on a laptop, a classroom computer, or a USB drive. It runs in any browser without internet and keeps its own saved projects.</p>
+        <div class="row"><button class="btn primary sm" id="downloadBtn">Download a copy</button></div>
+      </div>
+      <div class="credit">
+        <img src="data:image/png;base64,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" alt="The Holler">
+        <p>Built by The Holler at the Kentucky Valley Educational Cooperative for eastern Kentucky classrooms, and free for anyone to use.<br><a href="https://www.theholler.org" target="_blank" rel="noopener">theholler.org</a> · <a href="https://helpdesk.theholler.org" target="_blank" rel="noopener">Holler Helpdesk</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECT ================= -->
+  <section class="view" id="v-project">
+    <div class="row between">
+      <div class="row" style="flex:1;min-width:0">
+        <button class="btn quiet sm" id="toLibrary">‹ Projects</button>
+        <input class="name-input" id="projName" placeholder="Project name">
+      </div>
+      <div class="row">
+        <button class="btn" id="timelineBtn">Timeline</button>
+        <button class="btn" id="exportProjBtn">Export</button>
+        <button class="btn" id="settingsBtn">Settings</button>
+      </div>
+    </div>
+    <div class="row between" style="margin-top:16px;align-items:flex-end">
+      <div><div class="now" id="nowLine"></div><div class="tabs" id="phaseTabs"></div></div>
+      <div class="row" id="stepBtns"><button class="btn" id="prevPhaseBtn">‹ Previous</button><button class="btn primary" id="nextPhaseBtn">Next challenge ›</button></div>
+    </div>
+    <div class="row" style="margin-top:10px;gap:14px"><div class="funding-line" id="fundingLine"></div><a class="lesson" id="boardLesson" target="_blank" rel="noopener" style="display:none"></a></div>
+    <div class="grid teams" id="teamGrid" style="margin-top:16px"></div>
+    <div class="empty" id="teamEmpty" style="display:none;margin-top:16px">No teams yet. Add one to start shopping.</div>
+    <footer class="actions">
+      <button class="btn primary" id="addTeamBtn">Add team</button>
+      <button class="btn" id="materialsBtn">Materials for this challenge</button>
+      <button class="btn danger quiet" id="resetBtn">Reset purchases</button>
+    </footer>
+  </section>
+
+  <!-- ================= SHOP ================= -->
+  <section class="view" id="v-shop">
+    <div class="card dash">
+      <div class="who"><span class="swatch" id="shopSwatch"></span><span id="shopTeam"></span><span class="ph" id="shopPhase"></span></div>
+      <div class="gauge">
+        <div><div class="k" id="kBudget">Funds</div><div class="v mid"><span class="cur" id="c1"></span><span id="gBudget">0</span></div><div class="sub" id="gHint" style="text-align:left;height:14px"></div></div>
+        <div><div class="k">Spent</div><div class="v mid"><span class="cur" id="c2"></span><span id="gSpent">0</span></div></div>
+        <div style="text-align:center"><div class="k">Left</div><div class="v big left" id="gLeftWrap"><span class="cur" id="c3"></span><span id="gLeft">0</span></div></div>
+        <div style="text-align:right" id="bonusWrap"><div class="k">Bonus</div><div class="v mid bonus">+<span id="gBonus">0</span></div></div>
+      </div>
+      <div class="bar" style="margin-top:12px"><div class="fill" id="gFill"></div></div>
+      <div class="alert" id="gAlert"></div>
+    </div>
+    <div class="grid items" id="itemGrid"></div>
+    <div class="empty" id="itemEmpty" style="display:none">This challenge has no materials yet. Use <b>Materials</b> below to add some.</div>
+    <footer class="actions">
+      <button class="btn" id="shopBack">‹ All teams</button>
+      <button class="btn" id="shopMaterials">Materials</button>
+    </footer>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <section class="view" id="v-timeline">
+    <div class="row between">
+      <div><h1 class="title-h1" style="font-size:22px">Spending over time</h1><p class="lede" id="tlLede" style="margin-top:2px"></p></div>
+      <div class="row">
+        <button class="btn" id="csvBtn">Export log (CSV)</button>
+        <button class="btn" id="pngBtn">Export chart (PNG)</button>
+      </div>
+    </div>
+    <div class="card chart-box" style="margin-top:16px">
+      <div id="chart"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="card log"><h3>Purchase log</h3><div class="scroll"><table class="t" id="logTable"></table></div></div>
+    <footer class="actions"><button class="btn" id="tlBack">‹ All teams</button></footer>
+  </section>
+</div>
+
+<!-- ================= MODALS ================= -->
+<div class="modal" id="mNew"><div class="sheet" style="max-width:680px">
+  <h2>New project</h2><p class="hint">A few questions and the tracker sets itself up. Everything can be changed later in Settings.</p>
+  <div class="two">
+    <div class="field" style="flex:2"><label>Project name</label><input type="text" id="nName" placeholder="e.g. STEM Camp Day, Period 3 Bridge Build"></div>
+    <div class="field"><label>Money</label><select id="nCur" class="sel" style="width:100%"><option value="$">$ dollars</option><option value="§">§ mission funds</option><option value="¢">¢ cents</option><option value="pts ">pts points</option><option value="€">€ euro</option><option value="£">£ pounds</option><option value="custom">Custom symbol…</option></select><input type="text" id="nCurCustom" maxlength="8" placeholder="symbol" style="display:none;margin-top:6px"></div>
+  </div>
+  <h4 class="sec">Challenges</h4>
+  <p class="hint" style="margin-bottom:8px">Pick every challenge this project includes. Each gets its own supply depot. One for a single build, several for a multi-challenge day.</p>
+  <div class="challenges" id="nChallenges"></div>
+  <div class="two" style="margin-top:10px">
+    <div class="field"><label>Extra blank challenges (add your own materials)</label><input type="number" id="nBlank" min="0" max="8" value="0"></div>
+    <div class="field"><label>Teams to start with</label><input type="number" id="nTeams" min="0" max="30" value="4"></div>
+  </div>
+  <h4 class="sec">Budget</h4>
+  <div id="nBudgetMulti">
+    <div class="choice on" id="nChShared"><label class="head"><input type="radio" name="nmode" value="shared" id="nModeShared" checked><span><b>One combined budget for the whole project</b><small>Each team gets a single pool to split across all challenges however they like.</small></span></label></div>
+    <div class="choice" id="nChPer"><label class="head"><input type="radio" name="nmode" value="perPhase" id="nModePer"><span><b>Separate budget for each challenge</b><small>Every challenge has its own funds.</small></span></label>
+      <div class="body"><label class="check"><input type="checkbox" id="nCarry"> Carry leftover funds into the next challenge</label></div></div>
+  </div>
+  <div id="nAmounts"></div>
+  <details style="margin-top:6px"><summary>More options</summary>
+    <label class="check" style="margin-top:6px"><input type="checkbox" id="nBonusOn" checked> Award an efficiency bonus for unspent funds</label>
+    <div class="two"><div class="field"><label>+1 bonus point for every</label><input type="number" id="nBonusPer" min="1" step="any" value="10"></div>
+    <div class="field"><label>Warn when funds drop below (% of budget)</label><input type="number" id="nLow" min="0" max="100" value="20"></div></div>
+  </details>
+  <div class="err" id="nErr"></div>
+  <div class="acts"><button class="btn" onclick="closeModal('mNew')">Cancel</button><button class="btn primary" onclick="createFromWizard()">Create project</button></div>
+</div></div>
+
+<div class="modal" id="mConfirm"><div class="sheet" style="max-width:440px">
+  <h2 id="cfTitle">Are you sure?</h2><p class="hint" id="cfBody" style="margin-bottom:6px"></p>
+  <div class="field" id="cfTypeWrap" style="display:none;margin-top:10px"><label id="cfTypeLabel"></label><input type="text" id="cfType" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+  <div class="acts"><button class="btn" id="cfNo">Cancel</button><button class="btn danger" id="cfYes">Yes</button></div>
+</div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<div class="modal" id="mSettings"><div class="sheet">
+  <h2>Project settings</h2><p class="hint">Rules for this project. Changes apply immediately and recalculate every team.</p>
+  <div class="two">
+    <div class="field" style="flex:2"><label>Project name</label><input type="text" id="sName"></div>
+    <div class="field"><label>Currency symbol</label><input type="text" id="sCur" maxlength="6" placeholder="$"></div>
+  </div>
+  <h4 class="sec">Funding</h4>
+  <div class="choice" id="chShared"><label class="head"><input type="radio" name="fmode" value="shared" id="sModeShared"><span><b>One shared budget for the whole project</b><small>Each team gets a single pool that covers every challenge.</small></span></label>
+    <div class="body field"><label>Total per team</label><input type="number" id="sTotal" min="0" step="any"></div></div>
+  <div class="choice" id="chPer"><label class="head"><input type="radio" name="fmode" value="perPhase" id="sModePer"><span><b>Separate budget for each challenge</b><small>Every challenge has its own funds.</small></span></label>
+    <div class="body"><div id="sPerFields"></div><label class="check"><input type="checkbox" id="sCarry"> Carry leftover funds into the next challenge</label></div></div>
+  <h4 class="sec">Scoring</h4>
+  <label class="check"><input type="checkbox" id="sBonusOn"> Award an efficiency bonus for unspent funds</label>
+  <div class="two"><div class="field"><label>+1 bonus point for every</label><input type="number" id="sBonusPer" min="1" step="any"></div>
+  <div class="field"><label>Warn when funds drop below (% of budget)</label><input type="number" id="sLow" min="0" max="100" step="1"></div></div>
+  <h4 class="sec">Challenges</h4>
+  <div class="list" id="sPhases"></div>
+  <div class="row" style="margin-top:8px"><select id="sAddSel" class="sel" onchange="settingsAddPhaseFrom(this.value)"><option value="">Add a challenge…</option></select></div>
+  <div class="err" id="sErr"></div>
+  <div class="acts"><button class="btn" onclick="closeModal('mSettings')">Cancel</button><button class="btn primary" onclick="saveSettings()">Save settings</button></div>
+</div></div>
+
+<div class="modal" id="mMaterials"><div class="sheet">
+  <h2 id="matTitle">Materials</h2><p class="hint" style="margin-bottom:4px">What teams can buy in this challenge, and what it costs. Prices apply to every team.</p>
+  <a class="lesson" id="matLesson" target="_blank" rel="noopener" style="display:none;margin-bottom:12px"></a>
+  <div class="two"><div class="field" style="flex:2"><label>Material</label><input type="text" id="mName" placeholder="e.g. Popsicle stick"></div>
+  <div class="field"><label>Price</label><input type="number" id="mPrice" min="0" step="any" placeholder="4"></div></div>
+  <div class="two"><div class="field"><label>Unit (optional)</label><input type="text" id="mUnit" placeholder="each, per foot, per 12 in"></div>
+  <div class="field"><label>Limit per team (optional)</label><input type="number" id="mMax" min="1" step="1" placeholder="none"></div></div>
+  <label class="check"><input type="checkbox" id="mOnce"> One-time purchase, unlimited use (like a bottle of glue)</label>
+  <div class="err" id="mErr"></div>
+  <div class="row" style="justify-content:flex-end;gap:8px"><button class="btn sm quiet" id="mCancelEdit" style="display:none" onclick="resetMatForm()">Cancel edit</button><button class="btn primary sm" id="mSave" onclick="saveMaterial()">Add material</button></div>
+  <h4 class="sec">In this depot</h4>
+  <div class="list" id="matList"></div>
+  <div class="acts"><button class="btn" onclick="closeModal('mMaterials')">Done</button></div>
+</div></div>
+
+<script>
+/* ============================================================
+   STATE & STORAGE
+   ============================================================ */
+const APP_KEY='holler.budgetTracker.v1';
+const THEME_KEY='holler.budgetTracker.theme';
+const COLORS=['#2F6FED','#1E9E62','#D98E04','#D6453D','#8B5CF6','#0891B2','#EA580C','#DB2777','#65A30D','#C026D3'];
+let store={projects:{},activeId:null};
+let storageOK=true;
+let P=null;          // active project
+let phaseId=null;    // phase being viewed
+let shopTeamId=null; // team being shopped
+let editingItemId=null;
+
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7);}
+function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function num(n){n=Number(n)||0;return Number.isInteger(n)?String(n):n.toFixed(2).replace(/\.?0+$/,'');}
+function money(n){return (P?P.currency:'$')+num(n);}
+function fmtClock(ms){const s=Math.max(0,Math.round(ms/1000));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+function fmtDate(t){try{return new Date(t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});}catch(e){return '';}}
+
+function loadStore(){
+  try{const raw=localStorage.getItem(APP_KEY);if(raw){const s=JSON.parse(raw);if(s&&s.projects)store=s;}}
+  catch(e){storageOK=false;}
+  try{localStorage.setItem(APP_KEY+'.probe','1');localStorage.removeItem(APP_KEY+'.probe');}catch(e){storageOK=false;}
+}
+function persist(){
+  if(P){P.updatedAt=Date.now();store.projects[P.id]=P;store.activeId=P.id;}
+  try{localStorage.setItem(APP_KEY,JSON.stringify(store));flashSaved();}
+  catch(e){storageOK=false;document.getElementById('storageBanner').style.display='block';}
+}
+let savedTimer=null;
+function flashSaved(){
+  const el=document.getElementById('savedNote');
+  el.textContent='Saved '+new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
+  el.classList.add('on');clearTimeout(savedTimer);savedTimer=setTimeout(()=>el.classList.remove('on'),1500);
+}
+
+/* ============================================================
+   PROJECT MODEL & PRESETS
+   ============================================================ */
+function mkItem(name,price,unit,extra){return Object.assign({id:uid(),name,price,unit:unit||'each'},extra||{});}
+function mkPhase(name,items){return {id:uid(),name,items:items||[]};}
+function mkTeam(name){return {id:uid(),name,carts:{}};}
+
+function newProject(cfg){
+  const phases=cfg.phases;
+  const perPhase={};phases.forEach(ph=>perPhase[ph.id]=cfg.perPhaseAmount??100);
+  const p={
+    id:uid(),name:cfg.name,currency:cfg.currency||'$',
+    createdAt:Date.now(),updatedAt:Date.now(),
+    funding:{mode:cfg.mode||'shared',total:cfg.total??100,perPhase,carry:false},
+    bonus:{enabled:cfg.bonus!==false,per:cfg.bonusPer||10},
+    lowWarn:20,
+    phases,teams:(cfg.teams||[]).map(mkTeam),events:[]
+  };
+  p.teams.forEach(t=>phases.forEach(ph=>t.carts[ph.id]={}));
+  return p;
+}
+/* Challenge presets. Each becomes one phase with its own depot. Prices sit on a
+   ~100-per-team scale so a single challenge works out of the box. All editable. */
+const CHALLENGES={
+  eggdrop:{name:'Egg Drop Lander',icon:'🥚',blurb:'Protect a raw egg dropped from height. Lighter and cheaper scores higher.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/cub_mars_lesson05_activity1'},items:[
+    ['Plastic straw',6],['Craft / popsicle stick',4],['Cotton ball',5],['Index card',5],['Sheet of paper',4],['Paper cup',8],['Balloon',7,'each',{max:2}],['Rubber band',6],['String',3,'per foot'],['Masking tape',10,'per 12 in']]},
+  bridge:{name:'Bridge Build',icon:'🌉',blurb:'Span a gap and hold as much weight as possible.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/ucd_bridge_activity1'},items:[
+    ['Craft / popsicle stick',3],['Plastic straw',5],['Index card',5],['Sheet of paper',4],['String',3,'per foot'],['White glue',8,'one-time',{once:true}],['Masking tape',10,'per 12 in'],['Paper clip',2]]},
+  tower:{name:'Tallest Tower',icon:'🗼',blurb:'Build the tallest free-standing tower that survives a 10-second shake.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/cub_mechanics_lesson10_activity1'},items:[
+    ['Dry spaghetti',1,'per stick'],['Marshmallow',2],['Plastic straw',3],['Index card',4],['Paper cup',6],['String',3,'per foot'],['Masking tape',8,'per 12 in']]},
+  shelter:{name:'Earthquake Shelter',icon:'🏠',blurb:'Build a structure that stays standing on the shake table.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/cub_seismicw_lesson01_activity1'},items:[
+    ['Toothpick',1],['Marshmallow',2],['Craft / popsicle stick',3],['Plastic straw',3],['Index card',4],['Modeling clay',8,'per ball'],['Masking tape',8,'per 12 in']]},
+  glider:{name:'Paper Glider',icon:'✈️',blurb:'Fly the farthest, or stay in the air the longest.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/cub_airplanes_lesson06_activity1'},items:[
+    ['Sheet of paper',4],['Cardstock',7],['Paper clip',2],['Plastic straw',3],['Index card',4],['Tape',6,'per 6 in'],['Rubber band',4]]},
+  parachute:{name:'Parachute Drop',icon:'🪂',blurb:'Slowest safe landing for a small passenger.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/design_a_parachute'},items:[
+    ['Coffee filter',3],['Plastic sheet',6,'per sheet'],['String',3,'per foot'],['Paper cup',5],['Paper clip',2],['Plastic straw',3],['Tape',6,'per 6 in']]},
+  boat:{name:'Cargo Boat',icon:'⛵',blurb:'Float the most pennies or washers without sinking.',lesson:{src:'Science Buddies',url:'https://www.sciencebuddies.org/stem-activities/aluminum-foil-boats-float'},items:[
+    ['Aluminum foil',6,'per sheet'],['Plastic straw',3],['Craft / popsicle stick',3],['Paper cup',5],['Modeling clay',8,'per ball'],['String',3,'per foot'],['Masking tape',8,'per 12 in']]},
+  car:{name:'Balloon-Powered Car',icon:'🏎️',blurb:'Travel the farthest on one balloon of air.',lesson:{src:'Science Buddies',url:'https://www.sciencebuddies.org/teacher-resources/lesson-plans/balloon-car'},items:[
+    ['Balloon',6,'each',{max:2}],['Plastic straw',3],['Bottle cap (wheel)',3],['Wooden skewer',4],['Cardboard',6,'per sheet'],['Paper cup',5],['Rubber band',4],['Masking tape',8,'per 12 in']]},
+  catapult:{name:'Catapult Launch',icon:'🏹',blurb:'Launch a ping-pong ball the farthest, or hit a target.',lesson:{src:'Science Buddies',url:'https://www.sciencebuddies.org/stem-activities/popsicle-stick-catapult'},items:[
+    ['Craft / popsicle stick',3],['Rubber band',4],['Plastic spoon',6],['Bottle cap',3],['Clothespin',7],['Paper cup',5],['Masking tape',8,'per 12 in'],['Hot glue access',10,'one-time',{once:true}]]},
+  marble:{name:'Marble Run',icon:'🎢',blurb:'Longest travel time from the top to the bottom.',lesson:{src:'Science Buddies',url:'https://www.sciencebuddies.org/stem-activities/paper-roller-coaster'},items:[
+    ['Cardboard tube',5],['Cardboard',6,'per sheet'],['Plastic straw',3],['Paper cup',5],['Index card',4],['String',3,'per foot'],['Masking tape',8,'per 12 in']]},
+  turbine:{name:'Wind Turbine',icon:'🌬️',blurb:'Turn fan wind into motion. Lift the most weight or spin the longest.',lesson:{src:'TryEngineering (IEEE)',url:'https://tryengineering.org/resource/lesson-plan/working-wind-energy/'},items:[
+    ['Paper cup',5],['Cardstock',7],['Index card',4],['Plastic straw',3],['Wooden skewer',4],['Paper clip',2],['String',3,'per foot'],['Tape',6,'per 6 in']]},
+  filter:{name:'Water Filter',icon:'💧',blurb:'Clean muddy water using layers of materials.',lesson:{src:'TeachEngineering',url:'https://www.teachengineering.org/activities/view/water_filtration'},items:[
+    ['Plastic cup',4],['Coffee filter',3],['Cotton ball',3],['Gravel',5,'per scoop'],['Sand',5,'per scoop'],['Activated charcoal',8,'per scoop'],['Rubber band',3],['Cheesecloth',6,'per square']]}
+};
+function challengePhase(key,include){const c=CHALLENGES[key];const ph=mkPhase(c.name,c.items.filter((a,i)=>!include||include[i]!==false).map(a=>mkItem(a[0],a[1],a[2],a[3])));ph.source=key;return ph;}
+function lessonFor(ph){const c=ph&&ph.source&&CHALLENGES[ph.source];return c&&c.lesson?c.lesson:null;}
+function setLessonLink(el,ph){const L=lessonFor(ph);if(!L){el.style.display='none';return;}el.href=L.url;el.textContent='Free lesson plan ('+L.src+') ↗';el.style.display='inline-block';}
+
+/* ---------- New-project wizard ---------- */
+function openWizard(){
+  document.getElementById('nName').value='';document.getElementById('nCurCustom').value='';
+  document.getElementById('nCur').value='$';document.getElementById('nCurCustom').style.display='none';
+  document.getElementById('nBlank').value=0;document.getElementById('nTeams').value=4;
+  document.getElementById('nModeShared').checked=true;document.getElementById('nModePer').checked=false;document.getElementById('nCarry').checked=false;
+  document.getElementById('nBonusOn').checked=true;document.getElementById('nBonusPer').value=10;document.getElementById('nLow').value=20;
+  document.getElementById('nErr').textContent='';document.getElementById('nAmounts').innerHTML='';
+  document.getElementById('nChallenges').innerHTML=Object.entries(CHALLENGES).map(([k,c])=>`<div class="chk" id="chk-${k}">
+    <label class="chk-head"><input type="checkbox" value="${k}" onchange="wizardSync()"><span class="ic">${c.icon}</span><span><b>${esc(c.name)}</b><small>${esc(c.blurb)}</small></span></label>
+    ${c.lesson?`<a class="lesson" href="${c.lesson.url}" target="_blank" rel="noopener">Free lesson plan (${esc(c.lesson.src)}) ↗</a>`:''}
+    <details class="chk-mats"><summary>Materials <span id="mc-${k}">${c.items.length} of ${c.items.length}</span></summary>
+      <div class="mat-opts">${c.items.map((a,i)=>`<label><input type="checkbox" checked data-c="${k}" data-i="${i}" onchange="wizardMatSync('${k}')"><span>${esc(a[0])}</span><em><span class="wcur">$</span>${num(a[1])}${a[2]&&a[2]!=='each'?' '+esc(a[2]):''}</em></label>`).join('')}</div>
+      <div class="row" style="margin-top:6px"><button type="button" class="btn sm quiet" onclick="wizardMatAll('${k}',true)">Select all</button><button type="button" class="btn sm quiet" onclick="wizardMatAll('${k}',false)">Clear all</button></div>
+    </details></div>`).join('');
+  wizardSync();openModal('mNew');setTimeout(()=>document.getElementById('nName').focus(),50);
+}
+function wizardSelected(){return [...document.querySelectorAll('#nChallenges .chk-head input:checked')].map(i=>i.value);}
+function wizardMatInputs(k){return [...document.querySelectorAll(`#nChallenges input[data-c="${k}"]`)];}
+function wizardMatSync(k){const ins=wizardMatInputs(k);document.getElementById('mc-'+k).textContent=ins.filter(i=>i.checked).length+' of '+ins.length;}
+function wizardMatAll(k,v){wizardMatInputs(k).forEach(i=>i.checked=v);wizardMatSync(k);}
+function wizardCur(){const s=document.getElementById('nCur').value;return s==='custom'?(document.getElementById('nCurCustom').value.trim()||'$'):s;}
+function wizardPhaseNames(){const names=wizardSelected().map(k=>CHALLENGES[k].name);const blank=Math.max(0,parseInt(document.getElementById('nBlank').value,10)||0);for(let i=0;i<blank;i++)names.push('Challenge '+(names.length+1));return names;}
+function wizardSync(){
+  document.querySelectorAll('#nChallenges .chk').forEach(l=>l.classList.toggle('on',l.querySelector('.chk-head input').checked));
+  document.querySelectorAll('#nChallenges .wcur').forEach(s=>s.textContent=wizardCur());
+  const names=wizardPhaseNames(),multi=names.length>1;
+  document.getElementById('nBudgetMulti').style.display=multi?'block':'none';
+  const per=multi&&document.getElementById('nModePer').checked;
+  document.getElementById('nChShared').classList.toggle('on',!per);document.getElementById('nChPer').classList.toggle('on',per);
+  const cur=wizardCur(),amt=document.getElementById('nAmounts'),prev={};
+  amt.querySelectorAll('input').forEach(i=>prev[i.dataset.k]=i.value);
+  if(per)amt.innerHTML=names.map((n,i)=>`<div class="field"><label>${esc(n)}: funds per team (${esc(cur)})</label><input type="number" min="0" step="any" data-k="p${i}" value="${prev['p'+i]??100}"></div>`).join('');
+  else amt.innerHTML=`<div class="field"><label>${multi?'Total per team for the whole project':'Funds per team'} (${esc(cur)})</label><input type="number" min="0" step="any" data-k="total" value="${prev.total??100}"></div>`;
+}
+function createFromWizard(){
+  const err=document.getElementById('nErr');
+  const sel=wizardSelected(),blank=Math.max(0,parseInt(document.getElementById('nBlank').value,10)||0);
+  if(!sel.length&&!blank){err.textContent='Pick at least one challenge, or add a blank one.';return;}
+  let name=document.getElementById('nName').value.trim();
+  if(!name)name=(sel.length===1&&!blank)?CHALLENGES[sel[0]].name:'New project';
+  const phases=sel.map(k=>challengePhase(k,wizardMatInputs(k).map(i=>i.checked)));for(let i=0;i<blank;i++)phases.push(mkPhase('Challenge '+(phases.length+1),[]));
+  const multi=phases.length>1,per=multi&&document.getElementById('nModePer').checked;
+  const amounts=[...document.querySelectorAll('#nAmounts input')];
+  if(amounts.some(i=>!(Number(i.value)>=0))){err.textContent='Enter a budget of 0 or more.';return;}
+  const nTeams=Math.min(30,Math.max(0,parseInt(document.getElementById('nTeams').value,10)||0));
+  const teams=[];for(let i=0;i<nTeams;i++)teams.push('Team '+(i+1));
+  const p=newProject({name,currency:wizardCur(),mode:per?'perPhase':'shared',total:per?100:Number(amounts[0]?amounts[0].value:100),phases,teams,
+    bonus:document.getElementById('nBonusOn').checked,bonusPer:Math.max(1,Number(document.getElementById('nBonusPer').value)||10)});
+  if(per)phases.forEach((ph,i)=>p.funding.perPhase[ph.id]=Number(amounts[i]?amounts[i].value:100)||0);
+  p.funding.carry=per&&document.getElementById('nCarry').checked;
+  p.lowWarn=Math.min(100,Math.max(0,Number(document.getElementById('nLow').value)||0));
+  closeModal('mNew');P=p;store.projects[p.id]=p;persist();openProject(p.id);
+}
+
+/* ============================================================
+   BUDGET MATH
+   ============================================================ */
+function phase(pid){return P.phases.find(p=>p.id===pid);}
+function team(tid){return P.teams.find(t=>t.id===tid);}
+function teamColor(t){return COLORS[P.teams.indexOf(t)%COLORS.length];}
+function spentFor(t,pid){const ph=phase(pid);if(!ph)return 0;const c=t.carts[pid]||{};return ph.items.reduce((s,it)=>s+(c[it.id]||0)*(Number(it.price)||0),0);}
+function totalSpent(t){return P.phases.reduce((s,ph)=>s+spentFor(t,ph.id),0);}
+function teamBudget(t,pid){
+  if(P.funding.mode==='shared'){const b=Number(P.funding.total)||0,spent=totalSpent(t);return {budget:b,spent,left:b-spent,shared:true,carry:0};}
+  let carryIn=0;
+  for(const ph of P.phases){
+    const base=Number(P.funding.perPhase[ph.id])||0;
+    const carry=P.funding.carry?carryIn:0;
+    const budget=base+carry, spent=spentFor(t,ph.id);
+    if(ph.id===pid)return {budget,spent,left:budget-spent,shared:false,carry,base};
+    carryIn=Math.max(0,budget-spent);
+  }
+  return {budget:0,spent:0,left:0,shared:false,carry:0,base:0};
+}
+function bonusFor(left){if(!P.bonus.enabled||left<0)return 0;const per=Number(P.bonus.per)||10;return Math.floor(left/per);}
+function stateFor(left,budget){if(left<0)return 'over';if(budget>0&&left<=budget*((Number(P.lowWarn)||0)/100))return 'low';return '';}
+function logEvent(t,it,qtyDelta,lineDelta,label){P.events.push({teamId:t.id,phaseId,itemName:label||it.name,qtyDelta,lineDelta,t:Date.now()});}
+
+/* ============================================================
+   ROUTING
+   ============================================================ */
+/* In-app confirm & toast (the browser's own popups are blocked in some embeds and on locked-down devices) */
+let cfResolve=null;
+let cfTyped=null;
+function ask(body,opts){opts=opts||{};return new Promise(res=>{cfResolve=res;cfTyped=opts.typed?String(opts.typed).toUpperCase():null;
+  document.getElementById('cfTitle').textContent=opts.title||'Are you sure?';document.getElementById('cfBody').textContent=body;
+  const y=document.getElementById('cfYes');y.textContent=opts.yes||'Yes';y.className='btn '+(opts.danger===false?'primary':'danger');
+  const wrap=document.getElementById('cfTypeWrap'),inp=document.getElementById('cfType');
+  if(cfTyped){wrap.style.display='block';document.getElementById('cfTypeLabel').textContent='Type '+cfTyped+' to confirm';inp.value='';y.disabled=true;}
+  else{wrap.style.display='none';y.disabled=false;}
+  openModal('mConfirm');setTimeout(()=>(cfTyped?inp:y).focus(),30);});}
+function cfCheckTyped(){const y=document.getElementById('cfYes');if(cfTyped)y.disabled=document.getElementById('cfType').value.trim().toUpperCase()!==cfTyped;}
+function cfDone(v){if(v&&cfTyped&&document.getElementById('cfYes').disabled)return;closeModal('mConfirm');const r=cfResolve;cfResolve=null;cfTyped=null;if(r)r(v);}
+let toastTimer=null;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3200);}
+function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+function openModal(id){document.getElementById(id).classList.add('show');}
+function closeModal(id){document.getElementById(id).classList.remove('show');}
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){if(m.id==='mConfirm')cfDone(false);else m.classList.remove('show');}}));
+document.getElementById('cfYes').addEventListener('click',()=>cfDone(true));
+document.getElementById('cfNo').addEventListener('click',()=>cfDone(false));
+document.getElementById('cfType').addEventListener('input',cfCheckTyped);
+document.getElementById('cfType').addEventListener('keydown',e=>{if(e.key==='Enter'&&!document.getElementById('cfYes').disabled)cfDone(true);});
+
+/* ============================================================
+   LIBRARY
+   ============================================================ */
+function renderLibrary(){
+  P=null;document.getElementById('savedNote').textContent='';
+  document.getElementById('storageBanner').style.display=storageOK?'none':'block';
+  const list=Object.values(store.projects).sort((a,b)=>b.updatedAt-a.updatedAt);
+  document.getElementById('projEmpty').style.display=list.length?'none':'block';
+  document.getElementById('projGrid').innerHTML=list.map(p=>`
+    <div class="card proj">
+      <h3>${esc(p.name)}</h3>
+      <div class="meta">${p.phases.length} challenge${p.phases.length===1?'':'s'}, ${p.teams.length} team${p.teams.length===1?'':'s'}, ${p.events.length} purchase${p.events.length===1?'':'s'} logged<br>Last saved ${fmtDate(p.updatedAt)}</div>
+      <div class="acts">
+        <button class="btn primary sm" onclick="openProject('${p.id}')">Open</button>
+        <button class="btn sm" onclick="duplicateProject('${p.id}')">Duplicate</button>
+        <button class="btn sm" onclick="exportProject('${p.id}')">Export</button>
+        <button class="btn sm danger quiet" onclick="deleteProject('${p.id}')">Delete</button>
+      </div>
+    </div>`).join('');
+}
+function openProject(id){
+  P=store.projects[id];if(!P)return;
+  P.phases.forEach(ph=>P.teams.forEach(t=>{if(!t.carts[ph.id])t.carts[ph.id]={};}));
+  phaseId=P.phases[0]?P.phases[0].id:null;
+  store.activeId=id;persist();
+  show('v-project');renderProject();
+}
+function duplicateProject(id){
+  const src=store.projects[id];if(!src)return;
+  const copy=JSON.parse(JSON.stringify(src));
+  copy.id=uid();copy.name=src.name+' (copy)';copy.createdAt=Date.now();copy.updatedAt=Date.now();
+  copy.events=[];copy.teams.forEach(t=>{t.carts={};copy.phases.forEach(ph=>t.carts[ph.id]={});});
+  store.projects[copy.id]=copy;persist();renderLibrary();
+}
+async function deleteProject(id){
+  const p=store.projects[id];if(!p)return;
+  if(!await ask('Delete "'+p.name+'"? This removes its teams, materials and purchase log from this device.',{title:'Delete project',yes:'Delete',typed:'DELETE'}))return;
+  delete store.projects[id];if(store.activeId===id)store.activeId=null;persist();renderLibrary();
+}
+function downloadBlob(content,type,filename){
+  const blob=content instanceof Blob?content:new Blob([content],{type});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function safeName(s){return String(s).replace(/[^\w\- ]+/g,'').trim().replace(/\s+/g,'_')||'project';}
+function exportProject(id){
+  const p=store.projects[id||(P&&P.id)];if(!p)return;
+  const env={format:'holler-budget-tracker',version:1,exportedAt:new Date().toISOString(),project:p};
+  downloadBlob(JSON.stringify(env,null,2),'application/json',safeName(p.name)+'.budget.json');
+}
+function importProjectFile(file){
+  const r=new FileReader();
+  r.onload=()=>{
+    try{
+      const data=JSON.parse(r.result);
+      const p=data&&data.format==='holler-budget-tracker'?data.project:data;
+      if(!p||!Array.isArray(p.phases)||!Array.isArray(p.teams))throw new Error('shape');
+      p.id=uid();p.updatedAt=Date.now();p.createdAt=p.createdAt||Date.now();
+      p.events=p.events||[];p.bonus=p.bonus||{enabled:true,per:10};p.lowWarn=p.lowWarn??20;p.currency=p.currency||'$';
+      p.funding=p.funding||{mode:'shared',total:100,perPhase:{},carry:false};p.funding.perPhase=p.funding.perPhase||{};
+      p.phases.forEach(ph=>{ph.items=ph.items||[];if(p.funding.perPhase[ph.id]==null)p.funding.perPhase[ph.id]=100;});
+      p.teams.forEach(t=>{t.carts=t.carts||{};p.phases.forEach(ph=>{if(!t.carts[ph.id])t.carts[ph.id]={};});});
+      if(Object.values(store.projects).some(x=>x.name===p.name))p.name+=' (imported)';
+      store.projects[p.id]=p;persist();renderLibrary();
+    }catch(e){toast("That file isn't a Project Budget Tracker export. Choose a .budget.json file created by this tool.");}
+  };
+  r.readAsText(file);
+}
+
+/* ============================================================
+   PROJECT VIEW
+   ============================================================ */
+function fundingSummary(){
+  if(P.funding.mode==='shared')return money(P.funding.total)+' per team, shared across '+(P.phases.length===1?'the project':'all '+P.phases.length+' challenges');
+  const ph=phase(phaseId);const base=ph?P.funding.perPhase[ph.id]:0;
+  return money(base)+' per team for this challenge'+(P.funding.carry?', plus leftover carried from earlier challenges':'');
+}
+function renderProject(){
+  document.getElementById('projName').value=P.name;
+  const idx=phaseIndex(),multi=P.phases.length>1;
+  document.getElementById('nowLine').textContent=multi?'Challenge '+(idx+1)+' of '+P.phases.length:'';
+  document.getElementById('phaseTabs').innerHTML=P.phases.map((ph,i)=>`<button class="${ph.id===phaseId?'active':(i<idx?'done':'')}" onclick="setPhase('${ph.id}')"><span class="n">${i+1}</span>${esc(ph.name)}</button>`).join('');
+  document.getElementById('stepBtns').style.display=multi?'flex':'none';
+  document.getElementById('prevPhaseBtn').disabled=idx<=0;
+  const nb=document.getElementById('nextPhaseBtn');nb.disabled=idx>=P.phases.length-1;nb.textContent=idx>=P.phases.length-1?'Last challenge':'Next challenge ›';
+  document.getElementById('fundingLine').textContent=fundingSummary();
+  setLessonLink(document.getElementById('boardLesson'),phase(phaseId));
+  document.getElementById('teamEmpty').style.display=P.teams.length?'none':'block';
+  document.getElementById('teamGrid').innerHTML=P.teams.map(t=>{
+    const b=teamBudget(t,phaseId),st=stateFor(b.left,b.budget),bonus=bonusFor(b.left);
+    const pct=b.budget>0?Math.min(100,b.spent/b.budget*100):(b.spent>0?100:0);
+    const breakdown=b.shared&&P.phases.length>1?P.phases.map(ph=>esc(ph.name.split(' · ')[0])+' '+money(spentFor(t,ph.id))).join(', '):'';
+    return `<div class="card team ${b.left<0?'over':''}">
+      <div class="head"><span class="swatch" style="background:${teamColor(t)}"></span>
+        <input class="name" value="${esc(t.name)}" onchange="renameTeam('${t.id}',this.value)" aria-label="Team name">
+        <button class="x" onclick="removeTeam('${t.id}')" title="Remove team" aria-label="Remove team">✕</button></div>
+      <div class="gauge">
+        <div><div class="k">Spent</div><div class="v mid"><span class="cur">${esc(P.currency)}</span>${num(b.spent)}</div></div>
+        <div style="text-align:center"><div class="k">Left</div><div class="v big left ${st}"><span class="cur">${esc(P.currency)}</span>${num(b.left)}</div></div>
+        ${P.bonus.enabled?`<div style="text-align:right"><div class="k">Bonus</div><div class="v mid bonus">+${bonus}</div></div>`:'<div></div>'}
+      </div>
+      <div class="bar"><div class="fill ${st}" style="width:${pct}%"></div></div>
+      ${breakdown?`<div class="sub">${breakdown}</div>`:''}
+      ${b.carry>0?`<div class="sub gold">${money(b.base)} + ${money(b.carry)} carried = ${money(b.budget)} to spend</div>`:''}
+      <button class="shop" onclick="openShop('${t.id}')">Shop the depot</button>
+    </div>`;}).join('');
+}
+function setPhase(id){phaseId=id;renderProject();}
+function addTeam(){const t=mkTeam('Team '+(P.teams.length+1));P.phases.forEach(ph=>t.carts[ph.id]={});P.teams.push(t);persist();renderProject();}
+async function removeTeam(id){const t=team(id);if(!t)return;if(P.events.some(e=>e.teamId===id)&&!await ask('Remove "'+t.name+'"? Their purchases stay in the log but the team disappears from the board.',{title:'Remove team',yes:'Remove'}))return;P.teams=P.teams.filter(x=>x.id!==id);persist();renderProject();}
+function renameTeam(id,v){const t=team(id);if(t){t.name=v.trim()||t.name;persist();}}
+async function resetPurchases(){
+  const multi=P.phases.length>1;
+  if(!await ask(multi?'Clear every purchase in every challenge? Teams, materials and settings stay. To keep this run for later, Duplicate the project first.':'Clear every purchase? Teams, materials and settings stay.',{title:'Reset purchases',yes:'Clear purchases',typed:'CLEAR'}))return;
+  P.teams.forEach(t=>P.phases.forEach(ph=>t.carts[ph.id]={}));P.events=[];persist();renderProject();toast('Purchases cleared. Fresh start.');
+}
+function phaseIndex(){return P.phases.findIndex(p=>p.id===phaseId);}
+function stepPhase(dir){const i=phaseIndex()+dir;if(i<0||i>=P.phases.length)return;phaseId=P.phases[i].id;renderProject();toast('Now on '+P.phases[i].name+(dir>0&&P.funding.mode==='shared'?'. Teams keep spending from the same budget.':''));}
+
+/* ============================================================
+   SHOP
+   ============================================================ */
+function openShop(tid){shopTeamId=tid;show('v-shop');renderShop();}
+function shopTeamObj(){return team(shopTeamId);}
+function renderShop(){
+  const t=shopTeamObj(),ph=phase(phaseId);
+  document.getElementById('shopSwatch').style.background=teamColor(t);
+  document.getElementById('shopTeam').textContent=t.name;
+  document.getElementById('shopPhase').textContent=ph.name;
+  ['c1','c2','c3'].forEach(i=>document.getElementById(i).textContent=P.currency);
+  const cart=t.carts[phaseId];
+  document.getElementById('itemEmpty').style.display=ph.items.length?'none':'block';
+  document.getElementById('itemGrid').innerHTML=ph.items.map(it=>{
+    const q=cart[it.id]||0,has=q>0?'has':'';
+    if(it.once)return `<div class="card item ${has}" id="it-${it.id}">
+      <div class="top"><div><div class="nm">${esc(it.name)}</div><div class="un">${esc(it.unit)}</div></div><div class="pr"><span class="cur">${esc(P.currency)}</span>${num(it.price)}</div></div>
+      <div class="note"></div>
+      <div class="stepper"><button class="once ${q?'on':''}" onclick="toggleOnce('${it.id}')">${q?'✓ In cart':'Buy'}</button></div>
+      <div class="line">${q?`<b>${money(it.price)}</b>`:'&nbsp;'}</div></div>`;
+    return `<div class="card item ${has}" id="it-${it.id}">
+      <div class="top"><div><div class="nm">${esc(it.name)}</div><div class="un">${esc(it.unit)}</div></div><div class="pr"><span class="cur">${esc(P.currency)}</span>${num(it.price)}</div></div>
+      <div class="note">${it.max?'Limit '+it.max+' per team':'&nbsp;'}</div>
+      <div class="stepper">
+        <button class="step" onclick="change('${it.id}',-1)" ${q<=0?'disabled':''} aria-label="Remove one">–</button>
+        <div class="qty" id="q-${it.id}">${q}</div>
+        <button class="step plus" onclick="change('${it.id}',1)" ${it.max&&q>=it.max?'disabled':''} aria-label="Add one">+</button></div>
+      <div class="line" id="l-${it.id}">${q?`<b>${money(q*it.price)}</b>`:'&nbsp;'}</div></div>`;
+  }).join('');
+  updateGauge();
+}
+function change(itemId,delta){
+  const t=shopTeamObj(),ph=phase(phaseId),it=ph.items.find(i=>i.id===itemId),cart=t.carts[phaseId];
+  let q=(cart[itemId]||0)+delta;if(q<0)q=0;if(it.max&&q>it.max)q=it.max;
+  const actual=q-(cart[itemId]||0);if(!actual)return;
+  cart[itemId]=q;logEvent(t,it,actual,actual*Number(it.price));persist();
+  const card=document.getElementById('it-'+itemId);
+  document.getElementById('q-'+itemId).textContent=q;
+  document.getElementById('l-'+itemId).innerHTML=q?`<b>${money(q*it.price)}</b>`:'&nbsp;';
+  card.classList.toggle('has',q>0);
+  card.querySelector('.step').disabled=q<=0;
+  if(it.max)card.querySelector('.plus').disabled=q>=it.max;
+  updateGauge();
+}
+function toggleOnce(itemId){
+  const t=shopTeamObj(),it=phase(phaseId).items.find(i=>i.id===itemId),cart=t.carts[phaseId];
+  const was=cart[itemId]?1:0;cart[itemId]=was?0:1;
+  logEvent(t,it,cart[itemId]-was,(cart[itemId]-was)*Number(it.price));persist();renderShop();
+}
+function updateGauge(){
+  const t=shopTeamObj(),b=teamBudget(t,phaseId),st=stateFor(b.left,b.budget);
+  document.getElementById('gBudget').textContent=num(b.budget);
+  document.getElementById('gHint').textContent=b.shared?(P.phases.length>1?'shared across all challenges':''):(b.carry>0?money(b.carry)+' carried in':'');
+  document.getElementById('gSpent').textContent=num(b.spent);
+  document.getElementById('gLeft').textContent=num(b.left);
+  document.getElementById('gLeftWrap').className='v big left '+st;
+  document.getElementById('bonusWrap').style.visibility=P.bonus.enabled?'visible':'hidden';
+  document.getElementById('gBonus').textContent=bonusFor(b.left);
+  const pct=b.budget>0?Math.min(100,b.spent/b.budget*100):(b.spent>0?100:0);
+  const f=document.getElementById('gFill');f.style.width=pct+'%';f.className='fill '+st;
+  const a=document.getElementById('gAlert');
+  if(st==='over'){a.className='alert show over';a.textContent='Over budget by '+money(-b.left)+'. Put something back or take the penalty.';}
+  else if(st==='low'){a.className='alert show low';a.textContent='Only '+money(b.left)+' left. Shop carefully.';}
+  else{a.className='alert';a.textContent='';}
+}
+
+/* ============================================================
+   MATERIALS (per phase)
+   ============================================================ */
+function openMaterials(){editingItemId=null;resetMatForm();renderMatList();document.getElementById('matTitle').textContent='Materials: '+phase(phaseId).name;setLessonLink(document.getElementById('matLesson'),phase(phaseId));openModal('mMaterials');setTimeout(()=>document.getElementById('mName').focus(),50);}
+function resetMatForm(){
+  editingItemId=null;['mName','mPrice','mUnit','mMax'].forEach(i=>document.getElementById(i).value='');
+  document.getElementById('mOnce').checked=false;document.getElementById('mErr').textContent='';
+  document.getElementById('mSave').textContent='Add material';document.getElementById('mCancelEdit').style.display='none';
+}
+function renderMatList(){
+  const ph=phase(phaseId);
+  document.getElementById('matList').innerHTML=ph.items.length?ph.items.map(it=>`
+    <div class="rowi"><div class="grow"><b>${esc(it.name)}</b><span>${money(it.price)} ${esc(it.unit)}${it.max?', limit '+it.max:''}${it.once?', one-time':''}</span></div>
+      <button class="btn sm" onclick="editMaterial('${it.id}')">Edit</button>
+      <button class="btn sm danger quiet" onclick="deleteMaterial('${it.id}')">Delete</button></div>`).join('')
+    :'<div class="rowi" style="color:var(--ink-3)">Nothing here yet.</div>';
+}
+function editMaterial(id){
+  const it=phase(phaseId).items.find(i=>i.id===id);if(!it)return;
+  editingItemId=id;
+  document.getElementById('mName').value=it.name;document.getElementById('mPrice').value=it.price;
+  document.getElementById('mUnit').value=it.unit==='each'||it.unit==='one-time'?'':it.unit;document.getElementById('mMax').value=it.max||'';
+  document.getElementById('mOnce').checked=!!it.once;
+  document.getElementById('mSave').textContent='Save changes';document.getElementById('mCancelEdit').style.display='inline-flex';
+  document.getElementById('mName').focus();
+}
+function saveMaterial(){
+  const name=document.getElementById('mName').value.trim(),price=Number(document.getElementById('mPrice').value);
+  let unit=document.getElementById('mUnit').value.trim();const once=document.getElementById('mOnce').checked;
+  const max=parseInt(document.getElementById('mMax').value,10);const err=document.getElementById('mErr');
+  if(!name){err.textContent='Give the material a name.';return;}
+  if(!(price>=0)||document.getElementById('mPrice').value===''){err.textContent='Enter a price (0 or more).';return;}
+  if(!unit)unit=once?'one-time':'each';
+  const ph=phase(phaseId);
+  if(editingItemId){
+    const it=ph.items.find(i=>i.id===editingItemId);
+    const oldPrice=Number(it.price);
+    it.name=name;it.unit=unit;it.once=once||undefined;it.max=(!once&&max>=1)?max:undefined;it.price=price;
+    if(oldPrice!==price)P.teams.forEach(t=>{const q=(t.carts[phaseId]||{})[it.id]||0;if(q>0)logEvent(t,it,0,q*(price-oldPrice),it.name+' (price change)');});
+  }else{
+    const it=mkItem(name,price,unit);if(once)it.once=true;else if(max>=1)it.max=max;ph.items.push(it);
+  }
+  persist();resetMatForm();renderMatList();
+  if(document.getElementById('v-shop').classList.contains('active'))renderShop();else renderProject();
+}
+async function deleteMaterial(id){
+  const ph=phase(phaseId),it=ph.items.find(i=>i.id===id);if(!it)return;
+  const owned=P.teams.some(t=>(t.carts[phaseId]||{})[id]>0);
+  if(!await ask('Remove "'+it.name+'" from this challenge?'+(owned?' Teams that bought it get refunded.':''),{title:'Remove material',yes:'Remove'}))return;
+  P.teams.forEach(t=>{const q=(t.carts[phaseId]||{})[id]||0;if(q>0){logEvent(t,it,-q,-q*Number(it.price));delete t.carts[phaseId][id];}});
+  ph.items=ph.items.filter(i=>i.id!==id);persist();renderMatList();
+  if(document.getElementById('v-shop').classList.contains('active'))renderShop();else renderProject();
+}
+
+/* ============================================================
+   SETTINGS
+   ============================================================ */
+let draftPhases=[];
+function openSettings(){
+  document.getElementById('sName').value=P.name;document.getElementById('sCur').value=P.currency;
+  document.getElementById('sModeShared').checked=P.funding.mode==='shared';document.getElementById('sModePer').checked=P.funding.mode!=='shared';
+  document.getElementById('sTotal').value=P.funding.total;document.getElementById('sCarry').checked=!!P.funding.carry;
+  document.getElementById('sBonusOn').checked=!!P.bonus.enabled;document.getElementById('sBonusPer').value=P.bonus.per;
+  document.getElementById('sLow').value=P.lowWarn;document.getElementById('sErr').textContent='';
+  draftPhases=P.phases.map(ph=>({id:ph.id,name:ph.name,amount:P.funding.perPhase[ph.id]??100,isNew:false}));
+  document.getElementById('sAddSel').innerHTML='<option value="">Add a challenge…</option><option value="__blank">Blank challenge</option>'+Object.entries(CHALLENGES).map(([k,c])=>`<option value="${k}">${c.icon} ${esc(c.name)}</option>`).join('');
+  renderSettingsPhases();syncModeChoice();openModal('mSettings');
+}
+function syncModeChoice(){const per=document.getElementById('sModePer').checked;document.getElementById('chShared').classList.toggle('on',!per);document.getElementById('chPer').classList.toggle('on',per);}
+function renderSettingsPhases(){
+  document.getElementById('sPhases').innerHTML=draftPhases.map((d,i)=>`
+    <div class="rowi"><input class="inl" value="${esc(d.name)}" onchange="draftPhases[${i}].name=this.value" aria-label="Challenge name">
+      <button class="btn sm danger quiet" onclick="settingsRemovePhase(${i})" ${draftPhases.length<=1?'disabled':''}>Remove</button></div>`).join('');
+  document.getElementById('sPerFields').innerHTML=draftPhases.map((d,i)=>`
+    <div class="field"><label>${esc(d.name||'Challenge '+(i+1))}: funds per team</label><input type="number" min="0" step="any" value="${d.amount}" onchange="draftPhases[${i}].amount=this.value"></div>`).join('');
+}
+function settingsAddPhase(){settingsAddPhaseFrom('__blank');}
+function settingsAddPhaseFrom(v){
+  const sel=document.getElementById('sAddSel');if(sel)sel.value='';
+  if(!v)return;
+  if(v==='__blank')draftPhases.push({id:uid(),name:'Challenge '+(draftPhases.length+1),amount:100,isNew:true});
+  else if(CHALLENGES[v])draftPhases.push({id:uid(),name:CHALLENGES[v].name,amount:100,isNew:true,challenge:v});
+  renderSettingsPhases();
+}
+async function settingsRemovePhase(i){
+  const d=draftPhases[i];
+  if(!d.isNew&&P.events.some(e=>e.phaseId===d.id)&&!await ask('Remove "'+d.name+'"? Its materials and purchase history will be deleted when you save.',{title:'Remove challenge',yes:'Remove'}))return;
+  draftPhases.splice(i,1);renderSettingsPhases();
+}
+function saveSettings(){
+  const err=document.getElementById('sErr');
+  const name=document.getElementById('sName').value.trim(),cur=document.getElementById('sCur').value.trim()||'$';
+  const per=document.getElementById('sModePer').checked;
+  const total=Number(document.getElementById('sTotal').value);
+  if(!name){err.textContent='Give the project a name.';return;}
+  if(!per&&!(total>=0)){err.textContent='Enter a total budget of 0 or more.';return;}
+  if(!draftPhases.length){err.textContent='Keep at least one challenge.';return;}
+  if(draftPhases.some(d=>!d.name.trim())){err.textContent='Every challenge needs a name.';return;}
+  if(per&&draftPhases.some(d=>!(Number(d.amount)>=0))){err.textContent='Enter a budget of 0 or more for every challenge.';return;}
+  P.name=name;P.currency=cur;
+  P.funding.mode=per?'perPhase':'shared';P.funding.total=total;P.funding.carry=document.getElementById('sCarry').checked;
+  P.bonus.enabled=document.getElementById('sBonusOn').checked;P.bonus.per=Math.max(1,Number(document.getElementById('sBonusPer').value)||10);
+  P.lowWarn=Math.min(100,Math.max(0,Number(document.getElementById('sLow').value)||0));
+  // phases: apply renames, adds, removals
+  const keep=new Set(draftPhases.map(d=>d.id));
+  P.phases=P.phases.filter(ph=>keep.has(ph.id));
+  draftPhases.forEach(d=>{
+    let ph=phase(d.id);
+    if(!ph){ph=d.challenge&&CHALLENGES[d.challenge]?challengePhase(d.challenge):mkPhase(d.name.trim(),[]);ph.id=d.id;ph.name=d.name.trim();P.phases.push(ph);}else ph.name=d.name.trim();
+    P.funding.perPhase[d.id]=Number(d.amount)||0;
+  });
+  P.phases.sort((a,b)=>draftPhases.findIndex(d=>d.id===a.id)-draftPhases.findIndex(d=>d.id===b.id));
+  Object.keys(P.funding.perPhase).forEach(k=>{if(!keep.has(k))delete P.funding.perPhase[k];});
+  P.teams.forEach(t=>{Object.keys(t.carts).forEach(k=>{if(!keep.has(k))delete t.carts[k];});P.phases.forEach(ph=>{if(!t.carts[ph.id])t.carts[ph.id]={};});});
+  P.events=P.events.filter(e=>keep.has(e.phaseId));
+  if(!phase(phaseId))phaseId=P.phases[0].id;
+  persist();closeModal('mSettings');renderProject();
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+function renderTimeline(){
+  const shared=P.funding.mode==='shared',ph=phase(phaseId);
+  document.getElementById('tlLede').textContent=shared
+    ?P.name+', all challenges, against the '+money(P.funding.total)+' shared budget'
+    :P.name+', '+ph.name+(P.funding.carry?' (carryover on; budgets vary by team)':'');
+  const evs=(shared?P.events.slice():P.events.filter(e=>e.phaseId===phaseId)).sort((a,b)=>a.t-b.t);
+  const chart=document.getElementById('chart'),legend=document.getElementById('legend'),logT=document.getElementById('logTable');
+  if(!evs.length){chart.innerHTML='<div class="empty" style="border:none">No purchases yet. Once teams start shopping, their spending appears here.</div>';legend.innerHTML='';logT.innerHTML='';return;}
+  const capVal=shared?Number(P.funding.total)||0:Number(P.funding.perPhase[phaseId])||0;
+  const t0=evs[0].t,now=Date.now(),span=Math.max(now-t0,30000);
+  const series={};P.teams.forEach(t=>{series[t.id]={team:t,pts:[{t:t0,cum:0}],cum:0,buys:0,last:t0,first:null};});
+  evs.forEach(e=>{const s=series[e.teamId];if(!s)return;s.pts.push({t:e.t,cum:s.cum});s.cum+=e.lineDelta;s.pts.push({t:e.t,cum:s.cum});if(e.qtyDelta>0)s.buys++;s.last=e.t;if(s.first===null)s.first=e.t;});
+  Object.values(series).forEach(s=>s.pts.push({t:now,cum:s.cum}));
+  const maxCum=Math.max(capVal||25,...Object.values(series).map(s=>s.cum));
+  const stepY=maxCum<=50?10:maxCum<=200?25:maxCum<=1000?100:Math.pow(10,Math.floor(Math.log10(maxCum)));
+  const yMax=Math.ceil(maxCum/stepY)*stepY;
+  const W=900,H=380,padL=60,padR=18,padT=18,padB=44;
+  const x=t=>padL+((t-t0)/span)*(W-padL-padR),y=v=>padT+(1-v/yMax)*(H-padT-padB);
+  const cs=getComputedStyle(document.documentElement);
+  const cRule=cs.getPropertyValue('--rule').trim()||'#ccc',cInk3=cs.getPropertyValue('--ink-3').trim()||'#888',cBad=cs.getPropertyValue('--bad').trim()||'#d33';
+  let svg=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" font-family="Helvetica, Arial, sans-serif">`;
+  for(let v=0;v<=yMax;v+=stepY){svg+=`<line x1="${padL}" y1="${y(v)}" x2="${W-padR}" y2="${y(v)}" stroke="${cRule}"/><text x="${padL-8}" y="${y(v)+4}" fill="${cInk3}" font-size="12" text-anchor="end">${esc(P.currency)}${num(v)}</text>`;}
+  if(capVal>0){svg+=`<line x1="${padL}" y1="${y(capVal)}" x2="${W-padR}" y2="${y(capVal)}" stroke="${cBad}" stroke-width="1.5" stroke-dasharray="6 5"/><text x="${W-padR}" y="${y(capVal)-6}" fill="${cBad}" font-size="11" text-anchor="end">${esc(money(capVal))} ${shared?'budget':'budget'+(P.funding.carry?' (base)':'')}</text>`;}
+  for(let i=0;i<=4;i++){svg+=`<text x="${padL+(W-padL-padR)*(i/4)}" y="${H-padB+20}" fill="${cInk3}" font-size="12" text-anchor="middle">${fmtClock(span*(i/4))}</text>`;}
+  svg+=`<text x="${padL+(W-padL-padR)/2}" y="${H-6}" fill="${cInk3}" font-size="12" text-anchor="middle">time since first purchase (min:sec)</text>`;
+  svg+=`<line x1="${padL}" y1="${padT}" x2="${padL}" y2="${H-padB}" stroke="${cInk3}"/><line x1="${padL}" y1="${H-padB}" x2="${W-padR}" y2="${H-padB}" stroke="${cInk3}"/>`;
+  Object.values(series).forEach(s=>{if(s.first===null)return;const col=teamColor(s.team);const d=s.pts.map((p,i)=>(i?'L':'M')+x(p.t).toFixed(1)+' '+y(p.cum).toFixed(1)).join(' ');svg+=`<path d="${d}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linejoin="round"/><circle cx="${x(s.last)}" cy="${y(s.cum)}" r="4.5" fill="${col}"/>`;});
+  svg+='</svg>';chart.innerHTML=svg;
+  legend.innerHTML=P.teams.map(t=>{const s=series[t.id],act=s.first!==null;return `<div class="it"><span class="swatch" style="background:${teamColor(t)}"></span><b>${esc(t.name)}</b><span class="m">${money(s.cum)}${act?', '+s.buys+' buys, '+fmtClock(s.last-s.first)+' active':', no activity'}</span></div>`;}).join('');
+  const running={};
+  logT.innerHTML='<tr><th>Time</th><th>Team</th><th>Item</th><th>Amount</th><th style="text-align:right">Running</th></tr>'+evs.map(e=>{
+    running[e.teamId]=(running[e.teamId]||0)+e.lineDelta;const t=team(e.teamId),neg=e.lineDelta<0;
+    const phName=shared&&P.phases.length>1?(phase(e.phaseId)?esc(phase(e.phaseId).name.split(' · ')[0])+': ':''):'';
+    const act=e.qtyDelta>0?`+${e.qtyDelta} ${esc(e.itemName)}`:e.qtyDelta<0?`removed ${-e.qtyDelta>1?(-e.qtyDelta)+'× ':''}${esc(e.itemName)}`:esc(e.itemName);
+    return `<tr><td class="dim">${fmtClock(e.t-t0)}</td><td><span class="swatch" style="background:${t?teamColor(t):'#999'};margin-right:6px"></span>${esc(t?t.name:'(removed team)')}</td><td>${phName}${act}</td><td class="amt ${neg?'neg':''}">${neg?'−':'+'}${money(Math.abs(e.lineDelta))}</td><td class="run">${money(running[e.teamId])}</td></tr>`;}).join('');
+}
+function csvCell(v){v=String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function exportCSV(){
+  const shared=P.funding.mode==='shared';
+  const evs=(shared?P.events.slice():P.events.filter(e=>e.phaseId===phaseId)).sort((a,b)=>a.t-b.t);
+  if(!evs.length){toast('No purchases to export yet.');return;}
+  const t0=evs[0].t,running={};
+  const rows=[['Elapsed (min:sec)','Clock time','Team','Phase','Action','Item','Qty change','Amount','Team running total']];
+  evs.forEach(e=>{running[e.teamId]=(running[e.teamId]||0)+e.lineDelta;const t=team(e.teamId),ph=phase(e.phaseId);
+    rows.push([fmtClock(e.t-t0),new Date(e.t).toLocaleTimeString(),t?t.name:'(removed team)',ph?ph.name:'',e.qtyDelta>0?'buy':e.qtyDelta<0?'remove':'adjust',e.itemName,e.qtyDelta,num(e.lineDelta),num(running[e.teamId])]);});
+  downloadBlob(rows.map(r=>r.map(csvCell).join(',')).join('\r\n'),'text/csv;charset=utf-8',safeName(P.name)+(shared?'':'_'+safeName(phase(phaseId).name))+'_log.csv');
+}
+function exportPNG(){
+  const svgEl=document.querySelector('#chart svg');if(!svgEl){toast('No chart to export yet.');return;}
+  const vb=svgEl.viewBox.baseVal,w=vb.width||900,h=vb.height||380,scale=2;
+  const clone=svgEl.cloneNode(true);clone.setAttribute('width',w);clone.setAttribute('height',h);
+  const cs=getComputedStyle(document.documentElement),bg=cs.getPropertyValue('--card').trim()||'#fff';
+  const wmk=document.createElementNS('http://www.w3.org/2000/svg','text');
+  wmk.setAttribute('x',w-18);wmk.setAttribute('y',h-6);wmk.setAttribute('text-anchor','end');wmk.setAttribute('font-size','11');wmk.setAttribute('fill',cs.getPropertyValue('--ink-3').trim()||'#888');
+  wmk.textContent='Project Budget Tracker, theholler.org';clone.appendChild(wmk);
+  const img=new Image();
+  img.onload=()=>{const c=document.createElement('canvas');c.width=w*scale;c.height=h*scale;const ctx=c.getContext('2d');ctx.fillStyle=bg;ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);
+    c.toBlob(b=>{if(!b){toast('Could not render the image. Try the CSV export.');return;}downloadBlob(b,'image/png',safeName(P.name)+'_timeline.png');},'image/png');};
+  img.onerror=()=>toast('Could not render the chart image. Try the CSV export.');
+  img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(clone));
+}
+
+/* ============================================================
+   TAKE IT WITH YOU — download a copy of the whole tool
+   ============================================================ */
+async function downloadTool(){
+  let html=null;
+  try{if(location.protocol.startsWith('http')){const r=await fetch(location.href,{cache:'no-store'});if(r.ok)html=await r.text();}}catch(e){}
+  if(!html)html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+  downloadBlob(html,'text/html;charset=utf-8','project-budget-tracker.html');
+  toast('Saved as project-budget-tracker.html. Open it in any browser; it works offline and keeps its own saved projects.');
+}
+document.getElementById('downloadBtn').addEventListener('click',downloadTool);
+
+/* ============================================================
+   THEME
+   ============================================================ */
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem(THEME_KEY,t);}catch(e){}}
+document.getElementById('themeBtn').addEventListener('click',()=>{applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');if(document.getElementById('v-timeline').classList.contains('active'))renderTimeline();});
+
+/* ============================================================
+   WIRING
+   ============================================================ */
+document.getElementById('newBtn').addEventListener('click',openWizard);
+document.getElementById('nCur').addEventListener('change',e=>{document.getElementById('nCurCustom').style.display=e.target.value==='custom'?'block':'none';wizardSync();});
+document.getElementById('nCurCustom').addEventListener('input',wizardSync);
+document.getElementById('nBlank').addEventListener('change',wizardSync);
+document.getElementById('nModeShared').addEventListener('change',wizardSync);
+document.getElementById('nModePer').addEventListener('change',wizardSync);
+document.getElementById('importBtn').addEventListener('click',()=>document.getElementById('importFile').click());
+document.getElementById('importFile').addEventListener('change',e=>{if(e.target.files[0])importProjectFile(e.target.files[0]);e.target.value='';});
+document.getElementById('toLibrary').addEventListener('click',()=>{show('v-library');renderLibrary();});
+document.getElementById('projName').addEventListener('change',e=>{P.name=e.target.value.trim()||P.name;e.target.value=P.name;persist();});
+document.getElementById('timelineBtn').addEventListener('click',()=>{show('v-timeline');renderTimeline();});
+document.getElementById('exportProjBtn').addEventListener('click',()=>exportProject());
+document.getElementById('settingsBtn').addEventListener('click',openSettings);
+document.getElementById('addTeamBtn').addEventListener('click',addTeam);
+document.getElementById('materialsBtn').addEventListener('click',openMaterials);
+document.getElementById('resetBtn').addEventListener('click',resetPurchases);
+document.getElementById('prevPhaseBtn').addEventListener('click',()=>stepPhase(-1));
+document.getElementById('nextPhaseBtn').addEventListener('click',()=>stepPhase(1));
+document.getElementById('shopBack').addEventListener('click',()=>{show('v-project');renderProject();});
+document.getElementById('shopMaterials').addEventListener('click',openMaterials);
+document.getElementById('tlBack').addEventListener('click',()=>{show('v-project');renderProject();});
+document.getElementById('csvBtn').addEventListener('click',exportCSV);
+document.getElementById('pngBtn').addEventListener('click',exportPNG);
+document.getElementById('sModeShared').addEventListener('change',syncModeChoice);
+document.getElementById('sModePer').addEventListener('change',syncModeChoice);
+
+/* ============================================================
+   BOOT
+   ============================================================ */
+(function boot(){
+  let th='light';try{th=localStorage.getItem(THEME_KEY)||(matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch(e){}
+  document.documentElement.setAttribute('data-theme',th);
+  loadStore();
+  if(store.activeId&&store.projects[store.activeId])openProject(store.activeId);else{show('v-library');renderLibrary();}
+})();
+// Debug hook for troubleshooting in the browser console (read-only view of state).
+window.__bt={get P(){return P},get store(){return store},get phaseId(){return phaseId},set phaseId(v){phaseId=v},get draftPhases(){return draftPhases},get storageOK(){return storageOK}};
+</script>
+</body>
+</html>
